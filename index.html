@@ -1,20 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Welcome SAKET</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard - SAKET</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="header">
-    <h2>Welcome SAKET</h2>
+  <div class="top-bar">
+    <div class="logo">NITRIS</div>
+    <div class="user-info" onclick="window.location.href='profile.html'">
+      <span>SAKET</span>
+      <img src="profile.jpg" alt="Profile" />
+    </div>
   </div>
 
-  <div class="profile-box">
-    <a href="profile.html">
-      <img src="profile.jpg" alt="Profile Image" class="profile-img">
-    </a>
-    <p>Click the image to view profile</p>
+  <div class="main-container">
+    <h2>Registered Courses | 2025-26 / Autumn</h2>
+    <table class="styled-table">
+      <thead>
+        <tr>
+          <th>#</th><th>Subject</th><th>Nature</th><th>Section</th>
+          <th>Time Slot</th><th>Faculty</th><th>Syllabus</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>MA2001: Probability and Statistics</td><td>Theory</td><td>S1</td><td>TA</td><td>Manas Ranjan Tripathy</td><td><a href="#">View</a></td></tr>
+        <tr><td>2</td><td>CS2013: Data Structures</td><td>Theory</td><td>S2</td><td>TB</td><td>Mamatha Narayan Sahoo</td><td><a href="#">View</a></td></tr>
+        <tr><td>3</td><td>CS2001: Digital System Design</td><td>Theory</td><td>S2</td><td>TE</td><td>Pankaj Kumar Sa</td><td><a href="#">View</a></td></tr>
+        <tr><td>4</td><td>HS2331: Intro to Society and Culture</td><td>Theory</td><td>S3</td><td>TE</td><td>Koteswara Rao Kodirekkala</td><td><a href="#">View</a></td></tr>
+        <tr><td>5</td><td>CS2011: Intro to AI and ML</td><td>Theory</td><td>S5</td><td>TE</td><td>Panthadeep Bhattacharjee</td><td><a href="#">View</a></td></tr>
+      </tbody>
+    </table>
   </div>
 </body>
 </html>
